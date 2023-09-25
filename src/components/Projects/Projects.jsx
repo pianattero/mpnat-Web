@@ -7,6 +7,8 @@ export const Projects = () => {
   return (
     <div id="projects">
       <h1>Projects</h1>
+      <h6 style={{ color: "gray", fontWeight: 100 }}>Most Recent Work</h6>
+
       <div className="project-info">
         <div className="card" style={{ width: "20rem" }}>
           <img src={wvsz} className="card-img-top" alt="Wacho vs. Zombies" />
