@@ -1,0 +1,7 @@
+.navbar div {
+    display: block;
+}
+
+.navbar-item {
+    list-style: none;
+}

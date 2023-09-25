@@ -1,0 +1,55 @@
+.summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.summary-info {
+    display: flex;
+    align-items: center;
+}
+
+.sum-links {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.sum-links ul li {
+    list-style: none;
+    padding: 8px;
+}
+
+.sum-links img {
+    width: 25px;
+    height: 25px;
+}
+
+.pp {
+    height: 250px;
+    filter: grayscale(100%);
+    margin: 0 20px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .summary-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sum-links {
+        margin: 0;
+    }
+
+    .sum-links ul {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .sum-links ul li {
+        padding: 0 15px;
+    }
+}

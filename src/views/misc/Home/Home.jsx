@@ -1,17 +1,19 @@
 import "./Home.css";
 
-import { NavLink } from "react-router-dom";
+import { Summary } from "../../../components/Summary/Summary";
+import { AboutMe } from "../../../components/AboutMe/AboutMe";
+import { Projects } from "../../../components/Projects/Projects";
+import { ContactForm } from "../../../components/ContactForm/ContactForm";
 
 export const Home = () => {
   return (
     <>
-      <h1>María Pía Nattero</h1>
-      <NavLink to="/projects">
-        <i className="bi bi-pencil-square"></i> Projects
-      </NavLink>
-      <NavLink to="/experience">
-        <i className="bi bi-pencil-square"></i> Work experience
-      </NavLink>
+      <div className="home">
+        <Summary />
+        <AboutMe />
+        <Projects />
+        <ContactForm />
+      </div>
     </>
   );
 };
