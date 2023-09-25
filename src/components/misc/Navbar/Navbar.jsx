@@ -2,17 +2,15 @@ import "./Navbar.css";
 
 import { HashLink } from "react-router-hash-link";
 
+import logo from "/images/mp.png";
+
 export const Navbar = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary sticky-top">
         <div className="container-fluid">
           <HashLink className="navbar-brand" to="#home">
-            <img
-              style={{ height: 35 }}
-              src="/public/images/mp.png"
-              alt="MP logo"
-            />
+            <img style={{ height: 35 }} src={logo} alt="MP logo" />
           </HashLink>
 
           <button

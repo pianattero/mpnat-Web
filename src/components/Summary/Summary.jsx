@@ -3,12 +3,13 @@ import { HashLink } from "react-router-hash-link";
 
 import "./Summary.css";
 
-import lnkOut from "/public/images/linkedin.png";
-import lnkOver from "/public/images/linkedin2.png";
-import gitOut from "/public/images/github.png";
-import gitOver from "/public/images/github2.png";
-import arg from "/public/images/arg.png";
-import spa from "/public/images/spa.png";
+import pic from "/images/pp.png";
+import lnkOut from "/images/linkedin.png";
+import lnkOver from "/images/linkedin2.png";
+import gitOut from "/images/github.png";
+import gitOver from "/images/github2.png";
+import arg from "/images/arg.png";
+import spa from "/images/spa.png";
 
 export const Summary = () => {
   const [lnkMouOver, setLknOver] = useState(false);
@@ -67,7 +68,7 @@ export const Summary = () => {
             </button>
           </HashLink>
         </div>
-        <img className="pics" src="../../../public/images/pp.png" />
+        <img className="pics" src={pic} />
       </div>
       <HashLink to="#about-me">
         <button className="btn btn-dark scroll-btn">

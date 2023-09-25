@@ -1,5 +1,7 @@
 import "./AboutMe.css";
 
+import pic2 from "/images/pic.png";
+
 export const AboutMe = () => {
   return (
     <>
@@ -8,7 +10,7 @@ export const AboutMe = () => {
         <h6 style={{ color: "gray", fontWeight: 100 }}>My Introduction</h6>
 
         <div className="about-me-info">
-          <img className="pics" src="../../../public/images/pic.png" />
+          <img className="pics" src={pic2} />
           <div className="download-btns">
             <button className="btn btn-dark">
               <a

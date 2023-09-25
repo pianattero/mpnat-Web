@@ -1,16 +1,15 @@
 import "./Projects.css";
 
+import wvsz from "/images/wvsz.jpg";
+import horocrew from "/images/horocrew.jpg";
+
 export const Projects = () => {
   return (
     <div id="projects">
       <h1>Projects</h1>
       <div className="project-info">
         <div className="card" style={{ width: "20rem" }}>
-          <img
-            src="/public/images/wvsz.jpg"
-            className="card-img-top"
-            alt="..."
-          />
+          <img src={wvsz} className="card-img-top" alt="Wacho vs. Zombies" />
           <div className="card-body">
             <h5 className="card-title">Wacho vs. Zombies</h5>
             <p className="card-text">
@@ -29,11 +28,7 @@ export const Projects = () => {
         </div>
 
         <div className="card" style={{ width: "20rem" }}>
-          <img
-            src="/public/images/horocrew.jpg"
-            className="card-img-top"
-            alt="..."
-          />
+          <img src={horocrew} className="card-img-top" alt="..." />
           <div className="card-body">
             <h5 className="card-title">HoroCrew</h5>
             <p className="card-text">
