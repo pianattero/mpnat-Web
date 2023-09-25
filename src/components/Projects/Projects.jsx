@@ -21,7 +21,15 @@ export const Projects = () => {
               target="_blank"
               className="btn btn-dark"
             >
-              <i className="bi bi-eye"></i> Take a look!
+              <i className="bi bi-eye"></i> Try it!
+            </a>
+            <a
+              href="https://github.com/pianattero/wachovszombies"
+              rel="noreferrer"
+              target="_blank"
+              className="btn btn-dark mt-2"
+            >
+              <i className="bi bi-file-code"></i> Repository
             </a>
           </div>
         </div>
@@ -39,7 +47,15 @@ export const Projects = () => {
               target="_blank"
               className="btn btn-dark"
             >
-              <i className="bi bi-eye"></i> Take a look!
+              <i className="bi bi-eye"></i> Try it
+            </a>
+            <a
+              href="https://github.com/orgs/P-B-org/repositories"
+              rel="noreferrer"
+              target="_blank"
+              className="btn btn-dark mt-2"
+            >
+              <i className="bi bi-file-code"></i> Repository
             </a>
           </div>
         </div>
