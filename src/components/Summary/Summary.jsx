@@ -1,11 +1,14 @@
 import { useState } from "react";
+import { HashLink } from "react-router-hash-link";
 
 import "./Summary.css";
 
-import lnkOut from "../../../public/images/linkedin.png";
-import lnkOver from "../../../public/images/linkedin2.png";
-import gitOut from "../../../public/images/github.png";
-import gitOver from "../../../public/images/github2.png";
+import lnkOut from "/public/images/linkedin.png";
+import lnkOver from "/public/images/linkedin2.png";
+import gitOut from "/public/images/github.png";
+import gitOver from "/public/images/github2.png";
+import arg from "/public/images/arg.png";
+import spa from "/public/images/spa.png";
 
 export const Summary = () => {
   const [lnkMouOver, setLknOver] = useState(false);
@@ -13,7 +16,7 @@ export const Summary = () => {
 
   return (
     <>
-      <div className="summary">
+      <div id="summary">
         <div className="summary-info">
           <div className="sum-links">
             <ul>
@@ -54,17 +57,26 @@ export const Summary = () => {
             <h2 style={{ color: "gray", fontWeight: 200 }} className="pb-2">
               Frontend Developer
             </h2>
-            <button className="m-3 btn btn-dark">
-              <i className="bi bi-send"></i> Contact Me
-            </button>
+            <h6 style={{ color: "gray", fontWeight: 100, fontSize: 14 }}>
+              From <img src={arg} style={{ width: 15 }} /> Buenos Aires,
+              Argentina, <br /> currently living in{" "}
+              <img src={spa} style={{ width: 15 }} /> Madrid, Spain.
+            </h6>
+            <HashLink to="#contact-form">
+              <button className="btn btn-dark contact-btn">
+                <i className="bi bi-send"></i> Contact Me
+              </button>
+            </HashLink>
           </div>
-          <img className="pp" src="../../../public/images/pp.png" />
+          <img className="pics" src="../../../public/images/pp.png" />
         </div>
-        <button className="btn btn-dark mt-5">
-          <i className="bi bi-arrow-down-short"></i>
-          Scroll down
-          <i className="bi bi-arrow-down-short"></i>
-        </button>
+        <HashLink to="#about-me">
+          <button className="btn btn-dark scroll-btn">
+            <i className="bi bi-arrow-down-short"></i>
+            Scroll down
+            <i className="bi bi-arrow-down-short"></i>
+          </button>
+        </HashLink>
       </div>
     </>
   );

@@ -1,0 +1,36 @@
+#about-me {
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.about-me-info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.download-btns {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.download-btns button {
+    margin: 10px 0;
+}
+
+.download-btns a {
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (max-width: 630px) {
+    .about-me-info {
+        flex-direction: column;
+    }
+
+    .download-btns {
+        margin: 20px 0;
+    }
+    
+}

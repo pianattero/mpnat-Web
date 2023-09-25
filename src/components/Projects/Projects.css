@@ -1,0 +1,20 @@
+#projects {
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.project-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.project-info p {
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.project-info div {
+    margin: 20px;
+}

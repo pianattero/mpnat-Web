@@ -3,3 +3,10 @@
 * {
     font-family: 'Martian Mono';
 }
+
+.pics {
+    height: 250px;
+    filter: grayscale(100%);
+    margin: 0 30px;
+}
+
