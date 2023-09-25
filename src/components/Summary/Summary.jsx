@@ -18,7 +18,7 @@ export const Summary = () => {
   return (
     <div id="summary">
       <div className="summary-info">
-        <div className="sum-links">
+        <div className="links">
           <ul>
             <li>
               <a
@@ -62,7 +62,7 @@ export const Summary = () => {
             Argentina, <br /> currently living in{" "}
             <img src={spa} style={{ width: 15 }} /> Madrid, Spain.
           </h6>
-          <HashLink to="#contact-form">
+          <HashLink to="#contact">
             <button className="btn btn-dark contact-btn">
               <i className="bi bi-send"></i> Contact Me
             </button>

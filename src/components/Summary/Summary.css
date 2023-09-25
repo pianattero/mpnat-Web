@@ -10,20 +10,20 @@
     align-items: center;
 }
 
-.sum-links {
+.links {
     display: flex;
     flex-direction: column;
     margin-right: 50px;
 }
 
-.sum-links ul li {
-    list-style: none;
-    padding: 8px;
-}
-
-.sum-links img {
+.links img {
     width: 25px;
     height: 25px;
+}
+
+.links ul li {
+    list-style: none;
+    padding: 8px;
 }
 
 .scroll-btn {
