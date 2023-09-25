@@ -8,7 +8,7 @@ import { ContactForm } from "../../../components/ContactForm/ContactForm";
 export const Home = () => {
   return (
     <>
-      <div className="home">
+      <div id="home">
         <Summary />
         <AboutMe />
         <Projects />

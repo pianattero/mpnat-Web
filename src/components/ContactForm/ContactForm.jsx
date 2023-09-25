@@ -3,7 +3,7 @@ import "./ContactForm.css";
 export const ContactForm = () => {
   return (
     <>
-      <div id="contact-form">
+      <div id="contact">
         <h1 className="text-center">Contact Info</h1>
         <h6 style={{ color: "gray", fontWeight: 100, textAlign: "center" }}>
           Get In Touch

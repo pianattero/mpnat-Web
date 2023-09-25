@@ -1,17 +1,20 @@
 import "./Navbar.css";
 
+import { HashLink } from "react-router-hash-link";
+
 export const Navbar = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg bg-body-tertiary sticky-top">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <HashLink className="navbar-brand" to="#home">
             <img
-              style={{ height: 30 }}
-              src="../../../../public/images/mp.png"
-              href="MP logo"
+              style={{ height: 35 }}
+              src="/public/images/mp.png"
+              alt="MP logo"
             />
-          </a>
+          </HashLink>
+
           <button
             className="navbar-toggler"
             type="button"
@@ -25,21 +28,21 @@ export const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  About Me
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  Projects
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link active" href="#">
-                  Experience
-                </a>
-              </li>
+              <HashLink className="navbar-brand" to="#about-me">
+                <li className="nav-item">
+                  <small>About Me ·</small>
+                </li>
+              </HashLink>
+              <HashLink className="navbar-brand" to="#projects">
+                <li className="nav-item">
+                  <small>Projects ·</small>
+                </li>
+              </HashLink>
+              <HashLink className="navbar-brand" to="#contact">
+                <li className="nav-item">
+                  <small>Contact Info ·</small>
+                </li>
+              </HashLink>
             </ul>
           </div>
         </div>
