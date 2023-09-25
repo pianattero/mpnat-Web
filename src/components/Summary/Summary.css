@@ -44,17 +44,17 @@
         text-align: center;
     }
 
-    .sum-links {
+    .links {
         margin: 0;
     }
 
-    .sum-links ul {
+    .links ul {
         display: flex;
         flex-direction: row;
         padding: 0;
     }
 
-    .sum-links ul li {
+    .links ul li {
         padding: 0 15px;
     }
 
